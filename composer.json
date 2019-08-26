@@ -55,7 +55,9 @@
     "wp-graphql/wp-graphql-acf": "^0.2.0",
     "wpackagist-plugin/amazon-s3-and-cloudfront": "^2.2",
     "wpackagist-plugin/imsanity": "^2.4",
+    "wpackagist-plugin/limit-login-attempts-reloaded": "^2.9",
     "wpackagist-plugin/simple-page-ordering": "^2.3",
+    "wpackagist-plugin/spinupwp": "^1.1",
     "wpackagist-plugin/wp-ses": "^1.2"
   },
   "scripts": {
@@ -72,18 +74,11 @@
     ],
     "setup": [
       "composer install",
-      "@wp_core_download",
-      "npm install --prefix wp-content/themes/view",
-      "@build"
-    ],
-    "start": [
-      "npm run --prefix wp-content/themes/view start"
+      "@wp_core_download"
     ],
     "build": [
-      "npm run --prefix wp-content/themes/view build"
-    ],
-    "prod": [
-      "composer install --no-dev --optimize-autoloader"
+      "composer install --no-dev --optimize-autoloader",
+      "@wp_core_download"
     ],
     "wp_core_download": "wp core download --path=core --skip-content --force --version=5.2.2"
   }
