@@ -51,6 +51,7 @@
     "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "*",
     "deliciousbrains-plugin/wp-offload-media": "*",
     "pyxl/acf-pro": "^5.8",
+    "vlucas/phpdotenv": "^3.4",
     "wp-graphql/wp-graphql": "^0.3.5",
     "wp-graphql/wp-graphql-acf": "^0.2.0",
     "wpackagist-plugin/amazon-s3-and-cloudfront": "^2.2",
